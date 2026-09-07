@@ -66,4 +66,34 @@ $(function(){
             $("<p>Paragraphs has not cssClass</p>").insertAfter("#btEx12")
         }
     })
+
+// Level 3
+    // Exercise 13
+    $("#btEx13").on("click", function(){
+        $("p").css("font-size", "30px")
+    })
+    // Exercise 14
+    $("#btEx14").on("click", function(){
+        $("p").on("click", function(){
+            $(this).css("backgroundColor", "yellow")
+        })
+    })
+    // Exercise 15
+    $("#btEx15").on("click", function(){
+        $("p").off("click")
+    })
+    // Exercise 16
+    $("#btEx16").on("click", function(){
+        $("p").hover(function(){
+        $("p").css("backgroundColor", "red")
+    }, function(){
+        $("p").css("backgroundColor", "white")
+    })
+    })
+    // Extra Exercise 16
+    $("#btExtraEx16").on("click", function(){
+        $("p").off("mouseenter")
+        $("p").off("mouseleave")
+    })
+
 })
