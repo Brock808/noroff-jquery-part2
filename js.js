@@ -1,0 +1,69 @@
+$(function(){
+// Level 1 
+    // Exercise 1
+    $("#btEx1").on("click", function(){
+        $("#para1").replaceWith("<p>Welcome to JQuery!</p>")
+    })
+
+    // Exercise 2
+    $("#btEx2").on("click", function(){
+        $("#para2").append("Have a nice day! :)")
+    })
+
+    // Exercise 3
+    $("#btEx3").on("click", function(){
+        $("p").prepend("Important: ")
+    })
+
+    // Exercise 4
+    $("#btEx4").on("click", function(){
+        $("<p>New Para ex4</p>").insertAfter("p")
+    })
+
+    // Exercise 5
+    $("#btEx5").on("click", function(){
+        $("<h1>Heading inserted</h1>").insertBefore("p")
+    })
+
+    // Exercise 6
+    $("#btEx6").on("click", function(){
+        $("p").replaceWith("<div>Replaced content</div>")
+    })
+
+// Level 2
+    // Exercise 7
+    $("#btEx7").on("click", function(){
+        $("a").attr("title", "Visit this link")
+    })
+    
+    // Exercise 8
+    $("btEx8").on("click", function(){
+        $("a").attr("title", "")
+    })
+
+    // Exercise 9
+    $("#btEx9").on("click", function(){
+        $("p").addClass("cssClass")
+    })
+
+    // Exercise 10
+    $("#btEx10").on("click", function(){
+        $("p").removeClass("cssClass")
+    })
+
+    // Exercise 11
+    $("#btEx11").on("click",function(){
+        $("p").toggleClass("cssClass")
+        console.log($("p").attr("class"));
+    })
+
+    // Exercise 12
+    $("#btEx12").on("click", function(){
+        let hasClass = $("#paraEx12").hasClass("cssClass");
+        if(hasClass){
+            $("<p>Paragraphs has cssClass</p>").insertAfter("#btEx12")
+        } else {
+            $("<p>Paragraphs has not cssClass</p>").insertAfter("#btEx12")
+        }
+    })
+})
