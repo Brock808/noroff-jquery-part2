@@ -117,4 +117,9 @@ $(function(){
     $("#btnEx19").on("click", function(){
         $("#paraEx19").slideToggle()
     })
+
+//Final Challenge
+    function continueTomorrow(){
+        alert("continue tomorrow")
+    }
 })
