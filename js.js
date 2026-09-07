@@ -96,5 +96,25 @@ $(function(){
         $("p").off("mouseleave")
     })
 
-    This is the second branch
+// Level 4
+    // Exercise 17
+    $("#btShowEx17").on("click", function(){
+        $("#paraEx17").show()
+    })
+    $("#btHideEx17").on("click", function(){
+        $("#paraEx17").hide()
+    })
+    $("#btToggleEx17").on("click", function(){
+        $("#paraEx17").toggle()
+    })
+    // Exercise 18
+    $("#paraEx18").hover(function(){
+        $(this).fadeTo("slow", 0.2)
+    },function(){
+        $(this).fadeTo("slow", 1)
+    })
+    // Exercise 19
+    $("#btnEx19").on("click", function(){
+        $("#paraEx19").slideToggle()
+    })
 })
