@@ -100,6 +100,15 @@ Create slide animations.
 Combine content manipulation, attributes, events and animations in a complete jQuery mini-project.
  
 ---
+## Repository Structure
+This repository was developed using multiple Git branches to practice:
+
+- Branch creation
+- Branch merging
+- Merge conflict resolution
+- Git workflow management
+
+---
 ## Purpose
  
 To practice jQuery DOM manipulation, attributes, classes, events, effects and animations through hands-on exercises.
