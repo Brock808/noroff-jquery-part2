@@ -2,7 +2,7 @@ $(function(){
 // Level 1 
     // Exercise 1
     $("#btEx1").on("click", function(){
-        $("#para1").replaceWith("<p>Welcome to JQuery!</p>")
+        $("#para1").text("Welcome to JQuery!")
     })
 
     // Exercise 2
@@ -37,8 +37,8 @@ $(function(){
     })
     
     // Exercise 8
-    $("btEx8").on("click", function(){
-        $("a").attr("title", "")
+    $("#btEx8").on("click", function(){
+        $("a").removeAttr("title")
     })
 
     // Exercise 9
@@ -96,5 +96,44 @@ $(function(){
         $("p").off("mouseleave")
     })
 
-    This is the main Branch
+// Level 4
+    // Exercise 17
+    $("#btShowEx17").on("click", function(){
+        $("#paraEx17").show()
+    })
+    $("#btHideEx17").on("click", function(){
+        $("#paraEx17").hide()
+    })
+    $("#btToggleEx17").on("click", function(){
+        $("#paraEx17").toggle()
+    })
+    // Exercise 18
+    $("#paraEx18").hover(function(){
+        $(this).fadeTo("slow", 0.2)
+    },function(){
+        $(this).fadeTo("slow", 1)
+    })
+    // Exercise 19
+    $("#btnEx19").on("click", function(){
+        $("#paraEx19").slideToggle()
+    })
+
+//Final Challenge
+    // Button1
+    $("#bt1Ex20").on("click", function(){
+        $("p").wrap("<a href='https://youtube.com' target='_black'></a>")
+    })
+    // Button2
+    $("#bt2Ex20").on("click", function(){
+        $("p").hover(function(){
+            $(this).css("font-size", "20px")
+        },function(){
+            $(this).css("font-size", "16px")
+        })
+    })
+    // Button3
+    $("#bt3Ex20").on("click", function(){
+        $("p").fadeOut("slow")
+        $("button").slideUp("slow")
+    })
 })
